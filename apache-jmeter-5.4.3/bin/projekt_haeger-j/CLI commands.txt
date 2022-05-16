@@ -1,0 +1,35 @@
+HOW TO ANALYSE
+==============
+https://stackoverflow.com/a/47567426/18143362
+https://stackoverflow.com/a/39214651/18143362
+
+asagidaki linkte faydali genel bilgiler var:
+https://octoperf.com/blog/2017/10/19/how-to-analyze-jmeter-results/#pre-requisites
+
+
+WHAT is PERFORM. Testimh ?
+https://loadium.com/?gclid=CjwKCAjw8sCRBhA6EiwA6_IF4ajbWuju4hCzweleWq1d5KNjN8_dYpxbk7obLJMQ-_pY0pTFjL3Z8BoCzf4QAvD_BwE
+https://www.youtube.com/watch?v=xG3mVsXzCCo
+
+How to write a performance test case
+https://www.myloadtest.com/blog/how-to-write-a-performance-test-case/
+
+okumalisin, güzel
+https://www.guru99.com/performance-testing.html
+
+
+=======================================
+cd C:\Users\Selami Demiral\Desktop\dokumanlar\PROGRAM exe Dosyalari\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin
+
+jmeter -n -t ./projekt_haeger-j/JPetStore_CLI_Testplan_11.03.jmx -l ./projekt_haeger-j/ScenarioResults_JPetStore_07.03.jtl
+
+## lösch die alte results datei
+
+jmeter -n -t ./projekt_haeger-j/JPetStore_HauptTestplan_07.03.jmx -l ./projekt_haeger-j/ScenarioResults_JPetStore_HauptTestplan_07.03.jtl -e -o ./projekt_haeger-j\TestResults"
+
+==============API================
+jmeter -n -t ./projekt_haeger-j/Jpetstore_API_Testplan_15_03.jmx -l ./projekt_haeger-j/ScenarioResults_Jpetstore_API_Testplan_15_03.jtl -e -o ./projekt_haeger-j\TestResults"
+
+
+==============DATENBANK================
+jmeter -n -t ./projekt_haeger-j/Jpetstore_Database_Testplan_14_03.jmx -l ./projekt_haeger-j/ScenarioResults_Jpetstore_Database_Testplan_14_03.jtl -e -o ./projekt_haeger-j\TestResults"
